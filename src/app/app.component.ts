@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  title = 'counter';
+  countNumber = 0;
+
+  resetbtn() {
+    this.countNumber = 0;
+  }
+
+  increasebtn() {
+    this.countNumber = this.countNumber + 1;
+  }
+
+  decresebtn() {
+    this.countNumber = this.countNumber - 1;
+  }
+}
